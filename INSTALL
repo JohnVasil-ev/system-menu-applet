@@ -1,0 +1,26 @@
+Dependencies
+============
+
+Those are the dependencies needed to compile pa-applet:
+
+* GLib (dev-libs/glib in Gentoo)
+* GTK+ >=3 (x11-libs/gtk+:3 in Gentoo)
+* Xlib (x11-libs/libx11 in Gentoo)
+* autoconf
+* automake
+* pkg-config
+
+
+Installation instructions
+=========================
+
+menu-applet uses autotools. If you're downloading from the Git repository, you
+might need to run autogen.sh before you compile it:
+
+$ ./autogen.sh
+
+Compiling and installing it is simple enough:
+
+$ ./configure --prefix=/foo/bar
+$ make
+$ make install
